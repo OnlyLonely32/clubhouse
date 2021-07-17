@@ -1,0 +1,19 @@
+.modalBlock{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 650px;
+  min-height: 200px;
+  padding: 65px;
+  border: 1px solid #00000005;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 1px #00000010;
+}
+
+.small{
+  max-width: 440px;
+}
