@@ -1,0 +1,41 @@
+.card {
+  padding: 32px;
+  align-items: flex-start;
+}
+
+.detalis {
+  display: flex;
+  flex-direction: row;
+}
+
+.avatars {
+  position: relative;
+  padding: 10px;
+  padding-right: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.speacers {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  list-style: none;
+}
+
+.listeners {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+
+  & li:last-child {
+    margin-left: 10px;
+  }
+}

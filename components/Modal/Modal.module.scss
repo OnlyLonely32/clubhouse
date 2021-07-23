@@ -1,4 +1,4 @@
-.modalBlock{
+.modalBlock {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -14,6 +14,12 @@
   box-shadow: 0 2px 1px #00000010;
 }
 
-.small{
+.small {
   max-width: 440px;
+}
+
+.card {
+  padding: 32px;
+  justify-content: flex-start;
+  align-items: flex-start;
 }

@@ -8,11 +8,12 @@ interface modalProps {
 
 export const Modal: React.FC<modalProps>= ({children, className, size}) =>{
     const sizes ={
-        small: styles.small
+        small: styles.small,
+        card: styles.card,
     };
   return(
       <div
-          className={clsx(styles.modalBlock, className, sizes[size])}>
+          className={clsx(className, styles.modalBlock, sizes[size])}>
           {children}
       </div>
  )
