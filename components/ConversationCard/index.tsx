@@ -8,13 +8,13 @@ import avatarStyles from "../Avatar/Avatar.module.scss";
 
 interface ConversationCardProps {
   title: string;
-  users: string[];
+  listeners: string[];
   avatarsUrl: string[];
   speacersCount: number;
   listenersCount: number;
 }
 
-export const ConversationCard:React.FC<ConversationCardProps> = ({title, users, avatarsUrl, speacersCount, listenersCount}) => {
+export const ConversationCard:React.FC<ConversationCardProps> = ({title, listeners, avatarsUrl, speacersCount, listenersCount}) => {
   
   
   return(
@@ -29,7 +29,7 @@ export const ConversationCard:React.FC<ConversationCardProps> = ({title, users, 
         <div className={styles.info} >
           <ul className={styles.speacers} >
             {
-              users.map((name, index) => <li key={name + index}>{name}</li>)
+              listeners.map((name, index) => <li key={name + index}>{name}</li>)
             }
           </ul>
           <ul className={styles.listeners}>

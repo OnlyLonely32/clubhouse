@@ -38,7 +38,7 @@
     "source.fixAll.eslint": true
   },
 
-  "workbench.colorTheme": "Mokka",
+  "workbench.colorTheme": "GitHub Dark Dimmed",
   "workbench.sideBar.location": "right",
   "workbench.iconTheme": "vscode-icons",
 

@@ -15,10 +15,12 @@ export const Header: React.FC<headerProps> = ({avatarUrl, fullname}) => {
         <h3>Clubhouse</h3>
       </div>
       <Link href="/profile/1" passHref>
-        <div className="user-data pointer d-flex">
-          <h3 className="mr-20">{fullname}</h3>
-          <Avatar src={avatarUrl} width="40px" height="40px" />
-        </div>
+        <a>
+          <div className="user-data pointer d-flex">
+            <h3 className="mr-20">{fullname}</h3>
+            <Avatar src={avatarUrl} width="40px" height="40px" />
+          </div>
+        </a>
       </Link>
     </div>
   )

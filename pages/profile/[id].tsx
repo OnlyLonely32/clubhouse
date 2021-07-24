@@ -12,7 +12,6 @@ export default function ProfilePage() {
       fullname="Vlad Burko" />
       
       <Profile 
-      className="mt-40"
       avatarUrl="" 
       fullname="Vlad Burko" 
       username="onlylonely32" 

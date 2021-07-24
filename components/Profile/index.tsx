@@ -1,10 +1,8 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import { Avatar } from "../../components/Avatar";
 import { Button } from "../../components/Button";
-import clsx from "clsx";
 import React from 'react';
 import Link from "next/link";
+import { BackButton } from "../BackButton";
 
 interface ProfileProps  {
   avatarUrl: string;
@@ -14,15 +12,10 @@ interface ProfileProps  {
   className?: string;
 }
 
-export const Profile: React.FC<ProfileProps> = ({avatarUrl, fullname, username, description, className}) => {
+export const Profile: React.FC<ProfileProps> = ({avatarUrl, fullname, username, description}) => {
   return(
     <>
-      <Link href="/rooms" passHref>
-        <div className={clsx("d-flex pointer", className)} >
-          <FontAwesomeIcon className='mr-10' icon={faArrowLeft}/>
-          <h3>Back</h3>
-        </div>
-      </Link>
+      <BackButton className="mt-40" href="/rooms"/>
       <div className="d-flex mt-10 mb-10">
         <Avatar src={avatarUrl} width="120px" height="120px" />
         <div className="d-flex flex-column ml-20">

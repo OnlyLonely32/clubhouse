@@ -4,7 +4,8 @@ import styles from './Button.module.scss'
 const colors ={
   green: styles.buttonGreen,
   gray: styles.buttonGray,
-  blue: styles.buttonBlue
+  blue: styles.buttonBlue,
+  red: styles.buttonRed
 };
 
 interface buttonProps {

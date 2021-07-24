@@ -1,4 +1,4 @@
-.button{
+.button {
   height: 48px;
   background-color: #5677ad;
   border-radius: 30px;
@@ -7,49 +7,59 @@
   padding: 0 30px;
   font-size: 18px;
   cursor: pointer;
-  
+
   &:disabled,
-  &:disabled:hover{
+  &:disabled:hover {
     background-color: #cdcbc4;
     cursor: default;
   }
-  
-  &:hover{
+
+  &:hover {
     background-color: lighten(#5677ad, 2%);
   }
-  
-  &:active{
+
+  &:active {
     background-color: lighten(#5677ad, 1%);
     transform: translateY(2px);
   }
 }
 
-.buttonGreen{
+.buttonGreen {
   background-color: #20bd5f;
 
   &:hover,
-  &:active{
+  &:active {
     background-color: lighten(#20bd5f, 2%);
   }
 }
 
-.buttonGray{
+.buttonRed {
+  background-color: #bd2020;
+  color: #fff;
+
+  &:hover,
+  &:active {
+    background-color: lighten(#bd2020, 2%);
+  }
+}
+
+.buttonGray {
   background-color: #f2f2f2;
   color: #323232;
 
   &:hover,
-  &:active{
+  &:active {
     background-color: lighten(#f2f2f2, 2%);
   }
 }
 
-.buttonBlue{
+.buttonBlue {
   background-color: transparent;
   border: 3px solid #5677ad;
   color: #5677ad;
 
   &:hover,
-  &:active{
+  &:active {
     border-color: lighten(#5677ad, 5%);
     background-color: transparent;
   }

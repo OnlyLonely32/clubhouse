@@ -3,3 +3,8 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 1.5rem;
 }
+
+.buttonRow {
+  display: flex;
+  justify-content: flex-end;
+}
