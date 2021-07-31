@@ -20,8 +20,9 @@ export const Room: React.FC<RoomProps> = ({title, users}) => {
           <Link href="/rooms">
             <a>
               <Button color="gray">
-                Leave 
-                <FontAwesomeIcon icon={faSignOutAlt} className="ml-10"/>
+                <div>
+                  <FontAwesomeIcon icon={faSignOutAlt} className="mr-10"/>Leave quietly
+                </div>                
               </Button>
             </a>
           </Link>

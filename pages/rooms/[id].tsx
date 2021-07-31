@@ -3,6 +3,7 @@ import { Header } from "../../components/Header";
 import { useRouter } from "next/router";
 import { Room } from "../../components/Room";
 import { BackButton } from "../../components/BackButton";
+import styles from "./Rooms.module.scss";
 import Axios from "../../core/axios";
 
 const RoomPage:React.FC = ({room}) => {
@@ -11,15 +12,15 @@ const RoomPage:React.FC = ({room}) => {
   const obj=[]
 
   return(
-    <>
-      <div className="container">
-        <Header  
+    <div className={styles.pageWrapper} >
+      <Header  
         avatarUrl="" 
         fullname="Vlad Burko" />
+      <div className="container">
         <BackButton href="/rooms" />
       </div>
       <Room title={room.title} users={obj}/>
-    </>
+    </div>
   )
 }
 

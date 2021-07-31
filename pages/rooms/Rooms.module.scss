@@ -9,3 +9,9 @@
   display: flex;
   justify-content: space-between;
 }
+
+.pageWrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}

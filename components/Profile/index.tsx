@@ -15,7 +15,7 @@ interface ProfileProps  {
 export const Profile: React.FC<ProfileProps> = ({avatarUrl, fullname, username, description}) => {
   return(
     <>
-      <BackButton className="mt-40" href="/rooms"/>
+      <BackButton href="/rooms"/>
       <div className="d-flex mt-10 mb-10">
         <Avatar src={avatarUrl} width="120px" height="120px" />
         <div className="d-flex flex-column ml-20">
